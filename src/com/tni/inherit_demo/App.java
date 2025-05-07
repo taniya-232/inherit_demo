@@ -16,7 +16,10 @@ public class App {
 		*/
 		
 		B obj2 = new B(11, 111);
-		System.out.println(obj2.getX()+"==========="+obj2.getY());
+//		System.out.println(obj2.getX()+"==========="+obj2.getY());
+		System.out.println(obj2);
+		obj2.show();
+		obj2.printY();
 	}
 
 }

@@ -17,4 +17,17 @@ public class B extends A {
 	public void setY(int y) {
 		this.y = y;
 	}
+	@Override
+	public String toString() {
+		return "A [x=" + getX() + "] <- B [y=" + y + "]";
+	}
+	@Override
+	public void show() {
+		super.show();
+		System.out.println("show() in B");
+	}
+	public void printY() {
+		System.out.println("y of A :: "+super.y);
+		System.out.println("y of B :: "+this.y);
+	}
 }
