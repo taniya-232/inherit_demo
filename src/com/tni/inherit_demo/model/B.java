@@ -2,6 +2,15 @@ package com.tni.inherit_demo.model;
 
 public class B extends A {
 	private int y;
+	public B() {
+		super();
+		System.out.println("Without argument constructor in B");
+	}
+	public B(int x, int y) {
+		super(x);
+		System.out.println("With argument constructor in B");
+		this.y = y;
+	}
 	public int getY() {
 		return y;
 	}
